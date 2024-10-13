@@ -22,7 +22,7 @@
     "tsBuild": "tsc || echo \"\"",
     "tsBuildExamples": "tsc -p ./examples/tsconfig.json",
     "emitAPI": "node build/generateImplicitAPI.js",
-    "build": "npm run tsBuild && npm run bundle",
+    "build": "npm run tsBuild && npm run bundle-cjs",
     "prepare": "npm run build",
     "cli.js": "node ./examples/js/cli.js",
     "export-exchanges": "node build/export-exchanges",
